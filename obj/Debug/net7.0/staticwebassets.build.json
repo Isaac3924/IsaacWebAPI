@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zkA32PncILMG6sWlT46Z4izK/T+r0DCoKjprFYwYWQc=",
+  "Source": "IsaacWebAPI",
+  "BasePath": "_content/IsaacWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
