@@ -92,7 +92,8 @@ namespace IsaacWebAPI.Controllers
             _context.Manga.Add(manga);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetManga", new { id = manga.Id }, manga);
+            // return CreatedAtAction("GetManga", new { id = manga.Id }, manga);
+            return CreatedAtAction(nameof(GetManga), new { id = manga.Id}, manga);
         }
 
         // DELETE: api/Manga/5
