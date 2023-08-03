@@ -68,6 +68,9 @@ namespace IsaacWebAPI.Controllers
 
       manga.Name = mangaDTO.Name;
       manga.IsComplete = mangaDTO.IsComplete;
+      manga.Shonen = mangaDTO.Shonen;
+      manga.Seinen = mangaDTO.Seinen;
+      manga.Shoujo = mangaDTO.Shoujo;
 
       try
       {
@@ -90,6 +93,9 @@ namespace IsaacWebAPI.Controllers
       {
         IsComplete = mangaDTO.IsComplete,
         Name = mangaDTO.Name
+        manga.Shonen = mangaDTO.Shonen;
+        manga.Seinen = mangaDTO.Seinen;
+        manga.Shoujo = mangaDTO.Shoujo;
       };
 
       _context.Manga.Add(manga);
@@ -129,6 +135,9 @@ namespace IsaacWebAPI.Controllers
         Id = manga.Id,
         Name = manga.Name,
         IsComplete = manga.IsComplete
+        manga.Shonen = mangaDTO.Shonen;
+        manga.Seinen = mangaDTO.Seinen;
+        manga.Shoujo = mangaDTO.Shoujo;
       };
   }
 }
